@@ -1,3 +1,5 @@
+# created by: João Pedro de Oliveira
+# github: https://github.com/potatosenior
 import tweepy 
 import requests
 import threading
