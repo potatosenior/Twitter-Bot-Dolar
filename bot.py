@@ -35,8 +35,9 @@ def publicarTweet(imagePath, dollar): # http://docs.tweepy.org/en/latest/api.htm
   emoji = "➖"
   if(float(dollar) > float(lastValue)):
     emoji = "⬆️"
-    if(float(dollar) < float(lastValue)):
-      emoji = "⬇️"
+  elif(float(dollar) < float(lastValue)):
+    emoji = "⬇️"
+    
   lastValue = float(dollar)
 
   status = emoji + "  Valor atual do @50cent: R$ %.2f" % (float(dollar) / 2)
